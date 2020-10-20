@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Smolno</title>       
+<link rel="stylesheet" href="Style.css">
+    <style>
+    body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+    </style>
+    </head>
+
+     
+    <div class = "chickenleft">
+        <img src="chicken-left.png" alt="Chicken on the left" style="max-height: 1000px; max-width: 500px"></div>
+    
+
+<body>
+
+<div class="centerimg">
+    <h1 class="wiggle">
+    <img src="Logo.png" alt ="Logo" style="max-height: 900px; max-width: 600px"></h1>
+    </div>
+<div class="center">
+<loginbtn onclick="document.getElementById('id01').style.display='block'" style="width:auto;border-radius:11px">PLAY GAME</loginbtn>
+    </div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Logo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+        
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
